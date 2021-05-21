@@ -16,14 +16,14 @@ public class KR2iCMode {
 	
 	// Recipe to create a C mode with CF 
 	@Test
-	public void cModeCF() throws Exception {
+	public void ModeCF() throws Exception {
 		@SuppressWarnings("rawtypes")
 		ArrayList<Comparable> a = new ArrayList<Comparable>();
 		Keywords key = new Keywords();
 		FileInputStream file = new FileInputStream("recipeCreationCMode.xlsx");
 		@SuppressWarnings("resource")
 		XSSFWorkbook workbook = new XSSFWorkbook(file);
-		Sheet s = workbook.getSheet("cModeCF0");
+		Sheet s = workbook.getSheet("ModeCF0");
 		workbook.getNumberOfFonts();
 
 		@SuppressWarnings("rawtypes")
@@ -156,14 +156,14 @@ public class KR2iCMode {
 	
 	// Recipe to create a C mode with PW
 	@Test
-	public void cModePW() throws Exception {
+	public void ModePW() throws Exception {
 		@SuppressWarnings("rawtypes")
 		ArrayList<Comparable> a = new ArrayList<Comparable>();
 		Keywords key = new Keywords();
 		FileInputStream file = new FileInputStream("recipeCreationCMode.xlsx");
 		@SuppressWarnings("resource")
 		XSSFWorkbook workbook = new XSSFWorkbook(file);
-		Sheet s = workbook.getSheet("cModePW0");
+		Sheet s = workbook.getSheet("ModePW0");
 
 		@SuppressWarnings("rawtypes")
 		Iterator itr = s.iterator();
@@ -295,14 +295,14 @@ public class KR2iCMode {
 	
 	// Recipe to create a C mode with UV
 	@Test
-	public void cModeUV() throws Exception {
+	public void ModeUV() throws Exception {
 		@SuppressWarnings("rawtypes")
 		ArrayList<Comparable> a = new ArrayList<Comparable>();
 		Keywords key = new Keywords();
 		FileInputStream file = new FileInputStream("recipeCreationCMode.xlsx");
 		@SuppressWarnings("resource")
 		XSSFWorkbook workbook = new XSSFWorkbook(file);
-		Sheet s = workbook.getSheet("cModeUV0");
+		Sheet s = workbook.getSheet("ModeUV0");
 
 		@SuppressWarnings("rawtypes")
 		Iterator itr = s.iterator();

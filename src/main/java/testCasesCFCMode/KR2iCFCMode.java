@@ -1,4 +1,4 @@
-package TestCases;
+package testCasesCFCMode;
 
 import java.io.FileInputStream;
 import java.util.ArrayList;
@@ -12,7 +12,9 @@ import org.junit.Test;
 
 import Keys.Keywords;
 
-public class FS15CMode {
+public class KR2iCFCMode {
+	
+	// Recipe to create a C mode with CF 
 	@Test
 	public void ModeCF() throws Exception {
 		@SuppressWarnings("rawtypes")
@@ -21,7 +23,7 @@ public class FS15CMode {
 		FileInputStream file = new FileInputStream("recipeCreationCMode.xlsx");
 		@SuppressWarnings("resource")
 		XSSFWorkbook workbook = new XSSFWorkbook(file);
-		Sheet s = workbook.getSheet("ModeCF2");
+		Sheet s = workbook.getSheet("ModeCF0");
 		workbook.getNumberOfFonts();
 
 		@SuppressWarnings("rawtypes")
@@ -161,7 +163,7 @@ public class FS15CMode {
 		FileInputStream file = new FileInputStream("recipeCreationCMode.xlsx");
 		@SuppressWarnings("resource")
 		XSSFWorkbook workbook = new XSSFWorkbook(file);
-		Sheet s = workbook.getSheet("ModePW2");
+		Sheet s = workbook.getSheet("ModePW0");
 
 		@SuppressWarnings("rawtypes")
 		Iterator itr = s.iterator();
@@ -300,7 +302,7 @@ public class FS15CMode {
 		FileInputStream file = new FileInputStream("recipeCreationCMode.xlsx");
 		@SuppressWarnings("resource")
 		XSSFWorkbook workbook = new XSSFWorkbook(file);
-		Sheet s = workbook.getSheet("ModeUV2");
+		Sheet s = workbook.getSheet("ModeUV0");
 
 		@SuppressWarnings("rawtypes")
 		Iterator itr = s.iterator();
@@ -431,3 +433,5 @@ public class FS15CMode {
 	}
 
 }
+
+

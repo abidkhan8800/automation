@@ -86,6 +86,16 @@ public class Keywords {
 				break;
 			}
 		}
+	}
+	public void verifyPageTitle(String objectName) throws InterruptedException {
+			element = driver.findElement(By.xpath(objectName));
+			System.out.println("Hi Inside Capture");
+			while(true) {
+				if(element.isDisplayed()) {
+					System.out.println(element.getText());
+					break;
+				}
+			}
 		
 		
 		

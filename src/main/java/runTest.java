@@ -10,17 +10,16 @@ import testCasesDMode.KMPiDMode;
 import testCasesDMode.KR2iDMode;
 
 public class runTest {
-	KR2iCMode c0 = new KR2iCMode();
-	KMPiCMode c1 = new KMPiCMode();
-	FS15CMode c2 = new FS15CMode();
-	FS500CMode c3 = new FS500CMode();
-	KR2iDMode d0 = new KR2iDMode();
-	KMPiDMode d1 = new KMPiDMode();
-	FS15DMode d2 = new FS15DMode();
-	FS500DMode d3 = new FS500DMode();
+//	KR2iCMode c0 = new KR2iCMode();
+//	KMPiCMode c1 = new KMPiCMode();
+//	FS15CMode c2 = new FS15CMode();
+//	FS500CMode c3 = new FS500CMode();
+//	KR2iDMode d0 = new KR2iDMode();
+//	KMPiDMode d1 = new KMPiDMode();
+//	FS15DMode d2 = new FS15DMode();
+//	FS500DMode d3 = new FS500DMode();
 	
-	@Test
-	public void main() throws Exception {
+	public static void main(String[] args) throws Exception {
 		// TODO Auto-generated method stub
 	
 //		c0.cModeCF();
@@ -35,6 +34,7 @@ public class runTest {
 //		c3.cModeCF();
 //		c3.cModePW();
 ////		c3.cModeUV();
+		KR2iDMode d0 = new KR2iDMode();
 		d0.ModeDV();
 //		d0.ModePW();
 //		d0.ModeUV();
