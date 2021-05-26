@@ -1,4 +1,4 @@
-package TestCases;
+package testCasesCFCMode;
 
 import java.io.FileInputStream;
 import java.util.ArrayList;
@@ -12,7 +12,7 @@ import org.junit.Test;
 
 import Keys.Keywords;
 
-public class FS15CMode {
+public class KMPiCMode {
 	@Test
 	public void ModeCF() throws Exception {
 		@SuppressWarnings("rawtypes")
@@ -21,7 +21,7 @@ public class FS15CMode {
 		FileInputStream file = new FileInputStream("recipeCreationCMode.xlsx");
 		@SuppressWarnings("resource")
 		XSSFWorkbook workbook = new XSSFWorkbook(file);
-		Sheet s = workbook.getSheet("ModeCF2");
+		Sheet s = workbook.getSheet("ModeCF1");
 		workbook.getNumberOfFonts();
 
 		@SuppressWarnings("rawtypes")
@@ -151,7 +151,7 @@ public class FS15CMode {
 
 		}
 	}
-	
+
 	// Recipe to create a C mode with PW
 	@Test
 	public void ModePW() throws Exception {
@@ -161,7 +161,7 @@ public class FS15CMode {
 		FileInputStream file = new FileInputStream("recipeCreationCMode.xlsx");
 		@SuppressWarnings("resource")
 		XSSFWorkbook workbook = new XSSFWorkbook(file);
-		Sheet s = workbook.getSheet("ModePW2");
+		Sheet s = workbook.getSheet("ModePW1");
 
 		@SuppressWarnings("rawtypes")
 		Iterator itr = s.iterator();
@@ -290,7 +290,7 @@ public class FS15CMode {
 
 		}
 	}
-	
+
 	// Recipe to create a C mode with UV
 	@Test
 	public void ModeUV() throws Exception {
@@ -300,7 +300,7 @@ public class FS15CMode {
 		FileInputStream file = new FileInputStream("recipeCreationCMode.xlsx");
 		@SuppressWarnings("resource")
 		XSSFWorkbook workbook = new XSSFWorkbook(file);
-		Sheet s = workbook.getSheet("ModeUV2");
+		Sheet s = workbook.getSheet("ModeUV1");
 
 		@SuppressWarnings("rawtypes")
 		Iterator itr = s.iterator();

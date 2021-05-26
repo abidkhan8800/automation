@@ -1,9 +1,9 @@
 import org.junit.Test;
 
-import TestCases.FS15CMode;
-import TestCases.FS500CMode;
-import TestCases.KMPiCMode;
-import TestCases.KR2iCMode;
+import testCasesCFCMode.FS15CMode;
+import testCasesCFCMode.FS500CMode;
+import testCasesCFCMode.KMPiCMode;
+import testCasesCFCMode.KR2iCMode;
 import testCasesDMode.FS15DMode;
 import testCasesDMode.FS500DMode;
 import testCasesDMode.KMPiDMode;

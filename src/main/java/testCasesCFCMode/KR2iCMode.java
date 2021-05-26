@@ -1,4 +1,4 @@
-package TestCases;
+package testCasesCFCMode;
 
 import java.io.FileInputStream;
 import java.util.ArrayList;
@@ -12,16 +12,24 @@ import org.junit.Test;
 
 import Keys.Keywords;
 
-public class KMPiCMode {
-	@Test
-	public void ModeCF() throws Exception {
+public class KR2iCMode {
+	public static void main(String[] args) throws Exception {
+		ModeCF();
+		ModePW();
+		ModeUV();
+		
+
+	}
+	
+	// Recipe to create a C mode with CF 
+	public static void ModeCF() throws Exception {
 		@SuppressWarnings("rawtypes")
 		ArrayList<Comparable> a = new ArrayList<Comparable>();
 		Keywords key = new Keywords();
-		FileInputStream file = new FileInputStream("recipeCreationCMode.xlsx");
+		FileInputStream file = new FileInputStream("recipeCreationCDCDMode.xlsx");
 		@SuppressWarnings("resource")
 		XSSFWorkbook workbook = new XSSFWorkbook(file);
-		Sheet s = workbook.getSheet("ModeCF1");
+		Sheet s = workbook.getSheet("ModeCDCD0");
 		workbook.getNumberOfFonts();
 
 		@SuppressWarnings("rawtypes")
@@ -151,17 +159,17 @@ public class KMPiCMode {
 
 		}
 	}
-
+	
 	// Recipe to create a C mode with PW
 	@Test
-	public void ModePW() throws Exception {
+	public static void ModePW() throws Exception {
 		@SuppressWarnings("rawtypes")
 		ArrayList<Comparable> a = new ArrayList<Comparable>();
 		Keywords key = new Keywords();
-		FileInputStream file = new FileInputStream("recipeCreationCMode.xlsx");
+		FileInputStream file = new FileInputStream("recipeCreationCDCDMode.xlsx");
 		@SuppressWarnings("resource")
 		XSSFWorkbook workbook = new XSSFWorkbook(file);
-		Sheet s = workbook.getSheet("ModePW1");
+		Sheet s = workbook.getSheet("ModePW0");
 
 		@SuppressWarnings("rawtypes")
 		Iterator itr = s.iterator();
@@ -290,17 +298,17 @@ public class KMPiCMode {
 
 		}
 	}
-
+	
 	// Recipe to create a C mode with UV
 	@Test
-	public void ModeUV() throws Exception {
+	public static void ModeUV() throws Exception {
 		@SuppressWarnings("rawtypes")
 		ArrayList<Comparable> a = new ArrayList<Comparable>();
 		Keywords key = new Keywords();
-		FileInputStream file = new FileInputStream("recipeCreationCMode.xlsx");
+		FileInputStream file = new FileInputStream("recipeCreationCDCDMode.xlsx");
 		@SuppressWarnings("resource")
 		XSSFWorkbook workbook = new XSSFWorkbook(file);
-		Sheet s = workbook.getSheet("ModeUV1");
+		Sheet s = workbook.getSheet("ModeUV0");
 
 		@SuppressWarnings("rawtypes")
 		Iterator itr = s.iterator();

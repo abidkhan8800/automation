@@ -2,13 +2,14 @@ package TestCases;
 
 import java.io.FileInputStream;
 import java.util.ArrayList;
+
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
-public class DMode {
+public class VacuumMode {
 	public static void main(String[] args) throws Exception {
 		// TODO Auto-generated method stub
-		FileInputStream file = new FileInputStream("recipeCreationDMode.xlsx");
+		FileInputStream file = new FileInputStream("recipeCreationVacuumMode.xlsx");
 		@SuppressWarnings("resource")
 		XSSFWorkbook workbook = new XSSFWorkbook(file);
 
@@ -24,5 +25,4 @@ public class DMode {
 		}
 		file.close();
 	}
-
 }

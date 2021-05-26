@@ -5,10 +5,10 @@ import java.util.ArrayList;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
-public class DMode {
+public class CDMode {
 	public static void main(String[] args) throws Exception {
 		// TODO Auto-generated method stub
-		FileInputStream file = new FileInputStream("recipeCreationDMode.xlsx");
+		FileInputStream file = new FileInputStream("recipeCreationCDMode.xlsx");
 		@SuppressWarnings("resource")
 		XSSFWorkbook workbook = new XSSFWorkbook(file);
 
@@ -24,5 +24,4 @@ public class DMode {
 		}
 		file.close();
 	}
-
 }
