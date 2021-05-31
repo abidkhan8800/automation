@@ -8,7 +8,9 @@ import TestCases.CDMode;
 import TestCases.CFCDCMode;
 import TestCases.CFCMode;
 import TestCases.CMode;
+import TestCases.CleaningMode;
 import TestCases.DMode;
+import TestCases.FlushingMode;
 import TestCases.VacuumMode;  
 
 public class runTest {
@@ -44,8 +46,14 @@ public class runTest {
 		now = LocalDateTime.now();
 		System.out.println(dtf.format(now));
 		VacuumMode.main(null);
-		LocalDateTime now1 = LocalDateTime.now();  
-		System.out.println(dtf.format(now1));  
+	    now = LocalDateTime.now();  
+		System.out.println(dtf.format(now));  
+		FlushingMode.main(null);
+	    now = LocalDateTime.now();  
+		System.out.println(dtf.format(now));  
+		CleaningMode.main(null);
+	    now = LocalDateTime.now();  
+		System.out.println(dtf.format(now));  
 
 	}
 
