@@ -1,53 +1,51 @@
-import org.junit.Test;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 
-import testCasesCFCMode.FS15CMode;
-import testCasesCFCMode.FS500CMode;
-import testCasesCFCMode.KMPiCMode;
-import testCasesCFCMode.KR2iCMode;
-import testCasesDMode.FS15DMode;
-import testCasesDMode.FS500DMode;
-import testCasesDMode.KMPiDMode;
-import testCasesDMode.KR2iDMode;
+import TestCases.CDCDMode;
+import TestCases.CDCMode;
+import TestCases.CDDCMode;
+import TestCases.CDMode;
+import TestCases.CFCDCMode;
+import TestCases.CFCMode;
+import TestCases.CMode;
+import TestCases.DMode;
+import TestCases.VacuumMode;  
 
 public class runTest {
-//	KR2iCMode c0 = new KR2iCMode();
-//	KMPiCMode c1 = new KMPiCMode();
-//	FS15CMode c2 = new FS15CMode();
-//	FS500CMode c3 = new FS500CMode();
-//	KR2iDMode d0 = new KR2iDMode();
-//	KMPiDMode d1 = new KMPiDMode();
-//	FS15DMode d2 = new FS15DMode();
-//	FS500DMode d3 = new FS500DMode();
-	
+	static DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");  
+	   
+	@SuppressWarnings("static-access")
 	public static void main(String[] args) throws Exception {
+		LocalDateTime now = LocalDateTime.now();
+		System.out.println(dtf.format(now));  
 		// TODO Auto-generated method stub
-	
-//		c0.cModeCF();
-//		c0.cModePW();
-//		c0.cModeUV();
-//		c1.cModeCF();
-//		c1.cModePW();
-//		c1.cModeUV();
-//		c2.cModeCF();
-//		c2.cModePW();
-//		c2.cModeUV();
-//		c3.cModeCF();
-//		c3.cModePW();
-////		c3.cModeUV();
-		KR2iDMode d0 = new KR2iDMode();
-		d0.ModeDV();
-//		d0.ModePW();
-//		d0.ModeUV();
-//		d1.ModeDV();
-//		d1.ModePW();
-//		d1.ModeUV();
-//		d2.ModeDV();
-//		d2.ModePW();
-//		d2.ModeUV();
-//		d3.ModeDV();
-//		d3.ModePW();
-//		d3.ModeUV();
-		
+		CMode.main(null);
+		now = LocalDateTime.now();
+		System.out.println(dtf.format(now));
+		DMode.main(null);
+		now = LocalDateTime.now();
+		System.out.println(dtf.format(now));
+		CDMode.main(null);
+		now = LocalDateTime.now();
+		System.out.println(dtf.format(now));
+		CDCMode.main(null);
+		now = LocalDateTime.now();
+		System.out.println(dtf.format(now));
+		CFCMode.main(null);
+		now = LocalDateTime.now();
+		System.out.println(dtf.format(now));
+		CDCDMode.main(null);
+		now = LocalDateTime.now();
+		System.out.println(dtf.format(now));
+		CDDCMode.main(null);
+		now = LocalDateTime.now();
+		System.out.println(dtf.format(now));
+		CFCDCMode.main(null);
+		now = LocalDateTime.now();
+		System.out.println(dtf.format(now));
+		VacuumMode.main(null);
+		LocalDateTime now1 = LocalDateTime.now();  
+		System.out.println(dtf.format(now1));  
 
 	}
 

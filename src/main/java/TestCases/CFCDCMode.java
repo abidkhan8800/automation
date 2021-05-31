@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
-public class CFCDC {
+public class CFCDCMode {
 	public static void main(String[] args) throws Exception {
 		FileInputStream file = new FileInputStream("recipeCreationCFCDCMode.xlsx");
 		@SuppressWarnings("resource")
