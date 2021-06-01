@@ -11,6 +11,9 @@ import TestCases.CMode;
 import TestCases.CleaningMode;
 import TestCases.DMode;
 import TestCases.FlushingMode;
+import TestCases.FluxCMode;
+import TestCases.FluxCVMode;
+import TestCases.NWPMode;
 import TestCases.VacuumMode;  
 
 public class runTest {
@@ -54,6 +57,15 @@ public class runTest {
 		CleaningMode.main(null);
 	    now = LocalDateTime.now();  
 		System.out.println(dtf.format(now));  
+		FluxCVMode.main(null);
+	    now = LocalDateTime.now();  
+		System.out.println(dtf.format(now));  
+		FluxCMode.main(null);
+	    now = LocalDateTime.now();  
+		System.out.println(dtf.format(now));
+		NWPMode.main(null);
+	    now = LocalDateTime.now();  
+		System.out.println(dtf.format(now));
 
 	}
 
